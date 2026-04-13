@@ -27,9 +27,23 @@ class Solution {
 ```
 ---
 
-🧠 Key Idea
-	•	minPrice = best day to buy (cheapest so far)
-	•	price[i] = current day → potential selling day
-
 ####  👉 “Track lowest price so far, and at each step calculate profit if sold today.”
+
+👉 minPrice  
+- The lowest price seen so far  
+- Meaning → best day to buy  
+
+👉 price[i] (current price)  
+- Price on current day  
+- Meaning → potential day to sell
+
+---
+## 🧠 Formula
+
+profit = current price - minPrice
+
+👉 Translation:
+- Buy at cheapest earlier price (minPrice)  
+- Sell today (price[i])
+
 ---
